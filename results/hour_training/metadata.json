@@ -1,0 +1,115 @@
+{
+  "prefixes": [
+    "103.248.132.0/22",
+    "137.106.172.0/24",
+    "143.255.204.0/22",
+    "170.238.225.0/24",
+    "176.124.58.0/24"
+  ],
+  "training_slots": [
+    "0000",
+    "0005",
+    "0010",
+    "0015",
+    "0020",
+    "0025",
+    "0030",
+    "0035",
+    "0040",
+    "0045",
+    "0050",
+    "0055"
+  ],
+  "development_slots": [
+    "0100",
+    "0110"
+  ],
+  "holdout_slots": [
+    "0125",
+    "0130"
+  ],
+  "parser_statistics": {
+    "0000": {
+      "mrt_records": 356722,
+      "candidate_records": 4773,
+      "selected_prefix_announcements": 4564
+    },
+    "0005": {
+      "mrt_records": 377844,
+      "candidate_records": 4028,
+      "selected_prefix_announcements": 3743
+    },
+    "0010": {
+      "mrt_records": 314519,
+      "candidate_records": 2737,
+      "selected_prefix_announcements": 2591
+    },
+    "0015": {
+      "mrt_records": 245916,
+      "candidate_records": 3192,
+      "selected_prefix_announcements": 3020
+    },
+    "0020": {
+      "mrt_records": 419951,
+      "candidate_records": 3380,
+      "selected_prefix_announcements": 3151
+    },
+    "0025": {
+      "mrt_records": 238495,
+      "candidate_records": 3261,
+      "selected_prefix_announcements": 3077
+    },
+    "0030": {
+      "mrt_records": 335403,
+      "candidate_records": 2812,
+      "selected_prefix_announcements": 2651
+    },
+    "0035": {
+      "mrt_records": 309670,
+      "candidate_records": 3014,
+      "selected_prefix_announcements": 2858
+    },
+    "0040": {
+      "mrt_records": 321453,
+      "candidate_records": 3081,
+      "selected_prefix_announcements": 2922
+    },
+    "0045": {
+      "mrt_records": 229762,
+      "candidate_records": 2965,
+      "selected_prefix_announcements": 2835
+    },
+    "0050": {
+      "mrt_records": 386730,
+      "candidate_records": 2899,
+      "selected_prefix_announcements": 2727
+    },
+    "0055": {
+      "mrt_records": 316063,
+      "candidate_records": 2617,
+      "selected_prefix_announcements": 2482
+    },
+    "0100": {
+      "mrt_records": 327311,
+      "candidate_records": 2901,
+      "selected_prefix_announcements": 2722
+    },
+    "0110": {
+      "mrt_records": 368733,
+      "candidate_records": 2515,
+      "selected_prefix_announcements": 2403
+    },
+    "0125": {
+      "mrt_records": 356763,
+      "candidate_records": 2830,
+      "selected_prefix_announcements": 2665
+    },
+    "0130": {
+      "mrt_records": 256553,
+      "candidate_records": 3269,
+      "selected_prefix_announcements": 3086
+    }
+  },
+  "elapsed_seconds": 53.11,
+  "limitations": "Only five alphabetically preselected IPv4 prefixes and one collector; training one hour vs paper two days. Both variants share simplified disjoint correlation groups. Coalesced is extra heuristic, not GILL. Proxy anchors 35/50 trained on only 20 prefixes, not paper anchors. Random prefix-level sampling can split messages. No RIB/withdrawals in coverage metrics."
+}

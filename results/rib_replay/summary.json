@@ -1,0 +1,67 @@
+{
+  "prefixes": [
+    "103.248.132.0/22",
+    "137.106.172.0/24",
+    "143.255.204.0/22",
+    "170.238.225.0/24",
+    "176.124.58.0/24",
+    "180.149.253.0/24",
+    "182.239.53.0/24",
+    "186.219.224.0/22",
+    "199.192.180.0/22",
+    "209.22.66.0/24",
+    "209.22.67.0/24",
+    "216.135.74.0/24",
+    "38.47.186.0/24",
+    "41.209.0.0/18",
+    "41.75.208.0/20",
+    "45.172.92.0/22",
+    "45.182.52.0/22",
+    "45.183.178.0/24",
+    "67.211.53.0/24",
+    "8.40.27.0/24"
+  ],
+  "rib_file": "data/rrc00/bview.20230901.0000.gz",
+  "rib_snapshot_timestamp_utc": 1693526400,
+  "rib_stats": {
+    "mrt_records": 1189967,
+    "peer_table_records": 1,
+    "matched_rib_records": 20,
+    "matched_rib_entries": 852,
+    "loaded_routes": 852
+  },
+  "initial_routes": 852,
+  "initial_directed_edges": 388,
+  "update_file_counts": {
+    "updates.20230901.0000.gz": {
+      "update_messages": 355953,
+      "matched_messages": 19232,
+      "decode_errors": 5
+    },
+    "updates.20230901.0005.gz": {
+      "update_messages": 377083,
+      "matched_messages": 16609,
+      "decode_errors": 4
+    },
+    "updates.20230901.0010.gz": {
+      "update_messages": 313757,
+      "matched_messages": 14386,
+      "decode_errors": 5
+    }
+  },
+  "applied": {
+    "announced": 49845,
+    "withdrawn": 4200,
+    "unsupported": 18,
+    "unsupported_as4_path": 14
+  },
+  "change_events": 35814,
+  "final_routes": 749,
+  "final_directed_edges": 379,
+  "selected_update_timestamps_utc": [
+    1693526400,
+    1693527299
+  ],
+  "duration_seconds": 126.36,
+  "limitations": "Restricted IPv4 prefixes; no AS_SET/AS4_PATH reconciliation, MP_REACH, or peer state resets. Unknown/unsupported paths are removed rather than treated as valid. MRT RIB snapshot consistency depends on collector dump semantics."
+}

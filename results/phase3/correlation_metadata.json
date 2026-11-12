@@ -1,0 +1,139 @@
+{
+  "train_file": "rrc00/updates.20230901.0000.gz",
+  "test_file": "rrc00/updates.20230901.0010.gz",
+  "training": {
+    "prefix_announcements": 238508,
+    "excluded_paths": 20,
+    "parse_errors": 5
+  },
+  "testing": {
+    "prefix_announcements": 223893,
+    "excluded_paths": 120,
+    "parse_errors": 5
+  },
+  "candidate_prefixes": 5200,
+  "selected_prefixes": 20,
+  "method": "Simplified: disjoint 100-second anchored windows, IPv4 announcement signatures VP+AS_PATH+standard/large communities; duplicates collapse within window; most frequent training group per signature; greedy per-prefix VP selection aiming for 94% training recall. Predicted set includes observed retained signatures. No cross-prefix component, RIB, withdrawals, rolling filter deployment or full GILL implementation.",
+  "selected_vps": [
+    {
+      "prefix": "8.40.27.0/24",
+      "vps": [
+        "131477@103.102.5.1"
+      ]
+    },
+    {
+      "prefix": "137.106.172.0/24",
+      "vps": [
+        "207564@185.181.60.126"
+      ]
+    },
+    {
+      "prefix": "41.209.0.0/18",
+      "vps": [
+        "13830@161.129.152.2"
+      ]
+    },
+    {
+      "prefix": "67.211.53.0/24",
+      "vps": [
+        "131477@103.102.5.1"
+      ]
+    },
+    {
+      "prefix": "45.172.92.0/22",
+      "vps": [
+        "131477@103.102.5.1"
+      ]
+    },
+    {
+      "prefix": "209.22.66.0/24",
+      "vps": [
+        "131477@103.102.5.1"
+      ]
+    },
+    {
+      "prefix": "209.22.67.0/24",
+      "vps": [
+        "131477@103.102.5.1"
+      ]
+    },
+    {
+      "prefix": "180.149.253.0/24",
+      "vps": [
+        "59919@5.178.95.254"
+      ]
+    },
+    {
+      "prefix": "143.255.204.0/22",
+      "vps": [
+        "131477@103.102.5.1"
+      ]
+    },
+    {
+      "prefix": "45.182.52.0/22",
+      "vps": [
+        "131477@103.102.5.1"
+      ]
+    },
+    {
+      "prefix": "182.239.53.0/24",
+      "vps": [
+        "59919@5.178.95.254"
+      ]
+    },
+    {
+      "prefix": "103.248.132.0/22",
+      "vps": [
+        "131477@103.102.5.1"
+      ]
+    },
+    {
+      "prefix": "170.238.225.0/24",
+      "vps": [
+        "131477@103.102.5.1"
+      ]
+    },
+    {
+      "prefix": "186.219.224.0/22",
+      "vps": [
+        "131477@103.102.5.1"
+      ]
+    },
+    {
+      "prefix": "41.75.208.0/20",
+      "vps": [
+        "328474@102.67.56.1"
+      ]
+    },
+    {
+      "prefix": "176.124.58.0/24",
+      "vps": [
+        "207564@185.181.60.126"
+      ]
+    },
+    {
+      "prefix": "216.135.74.0/24",
+      "vps": [
+        "131477@103.102.5.1"
+      ]
+    },
+    {
+      "prefix": "45.183.178.0/24",
+      "vps": [
+        "131477@103.102.5.1"
+      ]
+    },
+    {
+      "prefix": "199.192.180.0/22",
+      "vps": [
+        "131477@103.102.5.1"
+      ]
+    },
+    {
+      "prefix": "38.47.186.0/24",
+      "vps": [
+        "131477@103.102.5.1"
+      ]
+    }
+  ]
+}

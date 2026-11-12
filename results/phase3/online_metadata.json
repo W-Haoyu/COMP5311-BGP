@@ -1,0 +1,34 @@
+[
+  {
+    "case": "rrc00_0000_0010",
+    "train_vps": 99,
+    "test_vps": 99,
+    "reference_links": 6618,
+    "train_updates": 355953,
+    "test_updates": 313757
+  },
+  {
+    "case": "rrc00_0100_0110",
+    "train_vps": 99,
+    "test_vps": 99,
+    "reference_links": 6671,
+    "train_updates": 326546,
+    "test_updates": 367964
+  },
+  {
+    "case": "rrc01_0000_0010",
+    "train_vps": 93,
+    "test_vps": 93,
+    "reference_links": 5145,
+    "train_updates": 351713,
+    "test_updates": 278211
+  },
+  {
+    "case": "rrc01_0100_0110",
+    "train_vps": 93,
+    "test_vps": 94,
+    "reference_links": 5092,
+    "train_updates": 263882,
+    "test_updates": 392039
+  }
+]

@@ -1,0 +1,30 @@
+{
+  "train_slots": [
+    "0000",
+    "0005",
+    "0010"
+  ],
+  "test": {
+    "0030": {
+      "parse": {
+        "selected_prefix_announcements": 15117,
+        "excluded_paths": 3,
+        "parse_errors": 5
+      },
+      "first_timestamp": 1693528200,
+      "last_timestamp": 1693528499
+    },
+    "0035": {
+      "parse": {
+        "selected_prefix_announcements": 13952,
+        "parse_errors": 5,
+        "excluded_paths": 3
+      },
+      "first_timestamp": 1693528500,
+      "last_timestamp": 1693528799
+    }
+  },
+  "seed": 42,
+  "random_repetitions": 100,
+  "limitations": "Approximate rules and proxy anchors; selected 20 IPv4 prefixes; independent later time but same day and collector; random records can split messages; excludes withdrawal and RIB in evaluation."
+}

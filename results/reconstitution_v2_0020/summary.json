@@ -1,0 +1,23 @@
+{
+  "train_file": "data/rrc00/updates.20230901.0000.gz",
+  "test_file": "data/rrc00/updates.20230901.0020.gz",
+  "train_stats": {
+    "prefix_announcements": 238508,
+    "excluded_paths": 20,
+    "parse_errors": 5
+  },
+  "test_stats": {
+    "prefix_announcements": 183267,
+    "excluded_paths": 34,
+    "parse_errors": 5
+  },
+  "prefixes": 20,
+  "total": {
+    "test_records": 14698,
+    "test_retained": 589,
+    "test_reconstruction_hits": 11611,
+    "test_predicted": 72947
+  },
+  "elapsed_seconds": 103.32,
+  "method": "Approximate correlation groups: disjoint first-update anchored 100-second windows and group signature sets; per update highest-weight matching training group. Greedy per-prefix all-or-none VP selection aims for training recall >=94%. Actual and predicted records are matched one-to-one by identical VP/path/communities and timestamps within 100s; duplicate predictions at identical timestamps collapse. Unseen test VPs are retained by default. IPv4 announcement records only; no withdrawals, cross-prefix stage, anchors, or full GILL."
+}

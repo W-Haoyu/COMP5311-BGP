@@ -1,0 +1,34 @@
+{
+  "records": 14698,
+  "reference_links": 681,
+  "parse": {
+    "prefix_announcements": 183267,
+    "excluded_paths": 34,
+    "parse_errors": 5
+  },
+  "methods": {
+    "previous_update_only_including_cross_prefix": {
+      "records": 554,
+      "links": 121,
+      "link_recall": 0.1776798825256975,
+      "prefixes": 17,
+      "prefix_path_pairs": 104,
+      "prefix_origin_pairs": 17,
+      "vps": 9,
+      "retained_fraction": 0.03769220302081916,
+      "random_same_count_mean_link_recall": 0.5255212922173275
+    },
+    "timestamp_aware_per_prefix": {
+      "records": 589,
+      "links": 162,
+      "link_recall": 0.23788546255506607,
+      "prefixes": 18,
+      "prefix_path_pairs": 113,
+      "prefix_origin_pairs": 18,
+      "vps": 13,
+      "retained_fraction": 0.04007347938495033,
+      "random_same_count_mean_link_recall": 0.5364610866372981
+    }
+  },
+  "limitations": "Old includes cross-prefix deduplication; new has per-prefix rules only. Different budgets; compare each to random at its own exact prefix-level count. IPv4 announcement only, 20 training-selected prefixes. No anchors, RIB or withdrawals in evaluation. Random sample can split BGP messages."
+}

@@ -1,0 +1,92 @@
+{
+  "seed": 42,
+  "repeats": 100,
+  "cases": [
+    {
+      "case": "rrc00_0000_0010",
+      "train_counts": {
+        "update_messages": 355953,
+        "ipv4_announcement_messages": 101617,
+        "usable_ipv4_announcement_messages": 101597,
+        "excluded_missing_or_nonsequence_path": 20,
+        "parse_errors": 5
+      },
+      "test_counts": {
+        "update_messages": 313757,
+        "ipv4_announcement_messages": 85152,
+        "usable_ipv4_announcement_messages": 85032,
+        "excluded_missing_or_nonsequence_path": 120,
+        "parse_errors": 5
+      },
+      "train_vps": 99,
+      "test_vps": 99,
+      "common_vps": 99,
+      "reference_links": 6618,
+      "test_updates": 313757
+    },
+    {
+      "case": "rrc00_0100_0110",
+      "train_counts": {
+        "update_messages": 326546,
+        "ipv4_announcement_messages": 98500,
+        "usable_ipv4_announcement_messages": 98486,
+        "excluded_missing_or_nonsequence_path": 14,
+        "parse_errors": 5
+      },
+      "test_counts": {
+        "update_messages": 367964,
+        "ipv4_announcement_messages": 98278,
+        "usable_ipv4_announcement_messages": 98241,
+        "excluded_missing_or_nonsequence_path": 37,
+        "parse_errors": 5
+      },
+      "train_vps": 99,
+      "test_vps": 99,
+      "common_vps": 99,
+      "reference_links": 6671,
+      "test_updates": 367964
+    },
+    {
+      "case": "rrc01_0000_0010",
+      "train_counts": {
+        "update_messages": 351713,
+        "ipv4_announcement_messages": 85315,
+        "usable_ipv4_announcement_messages": 85302,
+        "excluded_missing_or_nonsequence_path": 13
+      },
+      "test_counts": {
+        "update_messages": 278211,
+        "ipv4_announcement_messages": 62154,
+        "usable_ipv4_announcement_messages": 62065,
+        "excluded_missing_or_nonsequence_path": 89
+      },
+      "train_vps": 93,
+      "test_vps": 93,
+      "common_vps": 91,
+      "reference_links": 5145,
+      "test_updates": 278211
+    },
+    {
+      "case": "rrc01_0100_0110",
+      "train_counts": {
+        "update_messages": 263882,
+        "ipv4_announcement_messages": 70510,
+        "usable_ipv4_announcement_messages": 70501,
+        "excluded_missing_or_nonsequence_path": 9
+      },
+      "test_counts": {
+        "update_messages": 392039,
+        "ipv4_announcement_messages": 64996,
+        "usable_ipv4_announcement_messages": 64973,
+        "excluded_missing_or_nonsequence_path": 23
+      },
+      "train_vps": 93,
+      "test_vps": 94,
+      "common_vps": 91,
+      "reference_links": 5092,
+      "test_updates": 392039
+    }
+  ],
+  "elapsed_seconds": 96.34,
+  "budget_note": "Retrospective test-period VP counts used to enforce common caps; not deployable online. Actual usage can differ below cap."
+}

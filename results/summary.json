@@ -1,0 +1,25 @@
+{
+  "train_counts": {
+    "update_messages": 355953,
+    "ipv4_announcement_messages": 101617,
+    "usable_ipv4_announcement_messages": 101597,
+    "excluded_missing_or_nonsequence_path": 20,
+    "parse_errors": 5
+  },
+  "test_counts": {
+    "update_messages": 313757,
+    "ipv4_announcement_messages": 85152,
+    "usable_ipv4_announcement_messages": 85032,
+    "excluded_missing_or_nonsequence_path": 120,
+    "parse_errors": 5
+  },
+  "train_vps": 99,
+  "test_vps": 99,
+  "common_vps": 99,
+  "test_reference_links_all_vps": 6618,
+  "test_reference_updates_all_vps": 313757,
+  "seed": 42,
+  "repeats": 100,
+  "description": "Selection uses training updates and links only. Test includes all VPs as reference; non-common VPs cannot be selected. Budgets are approximate on test because VP activity changes.",
+  "elapsed_seconds": 24.01
+}

@@ -1,0 +1,34 @@
+{
+  "rules": "results/extended_training/rules.json",
+  "rules_sha256": "32a01147955f4def1f98a6b1cf09c2b419e76e21d5122044abdb8fc2db2f260c",
+  "compare_rules": "results/coalesced_training/rules.json",
+  "compare_rules_sha256": "93cd73d109d378a3f6b68c88f07e85005a60b84d4f41bc472766025e1e53b3ec",
+  "train_slots": [
+    "0000",
+    "0005",
+    "0010"
+  ],
+  "test": {
+    "0040": {
+      "parse": {
+        "selected_prefix_announcements": 13805,
+        "excluded_paths": 7,
+        "parse_errors": 5
+      },
+      "first_timestamp": 1693528800,
+      "last_timestamp": 1693529099
+    },
+    "0045": {
+      "parse": {
+        "selected_prefix_announcements": 15070,
+        "excluded_paths": 4,
+        "parse_errors": 4
+      },
+      "first_timestamp": 1693529100,
+      "last_timestamp": 1693529399
+    }
+  },
+  "seed": 42,
+  "random_repetitions": 100,
+  "limitations": "Approximate rules and proxy anchors; selected 20 IPv4 prefixes; independent later time but same day and collector; random records can split messages; excludes withdrawal and RIB in evaluation."
+}

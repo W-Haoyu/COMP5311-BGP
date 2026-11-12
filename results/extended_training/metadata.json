@@ -1,0 +1,46 @@
+{
+  "train_slots": [
+    "0000",
+    "0005",
+    "0010"
+  ],
+  "test_slots": [
+    "0015",
+    "0020",
+    "0025"
+  ],
+  "parse": {
+    "0000": {
+      "selected_prefix_announcements": 19646,
+      "parse_errors": 5,
+      "excluded_paths": 6
+    },
+    "0005": {
+      "selected_prefix_announcements": 16205,
+      "excluded_paths": 7,
+      "parse_errors": 4
+    },
+    "0010": {
+      "selected_prefix_announcements": 14008,
+      "excluded_paths": 5,
+      "parse_errors": 5
+    },
+    "0015": {
+      "selected_prefix_announcements": 15467,
+      "excluded_paths": 6,
+      "parse_errors": 5
+    },
+    "0020": {
+      "selected_prefix_announcements": 14698,
+      "excluded_paths": 7,
+      "parse_errors": 5
+    },
+    "0025": {
+      "selected_prefix_announcements": 13204,
+      "excluded_paths": 8,
+      "parse_errors": 4
+    }
+  },
+  "duration_seconds": 254.81,
+  "limitations": "15 minute training, 20 selected IPv4 prefixes, disjoint anchored 100s approximate correlation groups, no cross-prefix stage, excludes withdrawals and non-AS_SEQUENCE paths; proxy anchors based on only 20 prefixes, trained through 00:15. Random prefix-level sampling can split messages. No paper-wide performance claim."
+}

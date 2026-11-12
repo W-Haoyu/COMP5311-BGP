@@ -1,0 +1,15 @@
+# Local environments and Python caches
+.venv/
+__pycache__/
+*.py[cod]
+.DS_Store
+
+# Public data: download using the documented script
+data/
+*.part
+
+# Extracted text of the copyrighted source paper
+notes/paper-extracted.txt
+
+# Large intermediate replay log; regenerate locally
+results/rib_replay/state_changes.jsonl

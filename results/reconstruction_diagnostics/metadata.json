@@ -1,0 +1,41 @@
+{
+  "parse_counts": {
+    "0000": {
+      "selected_prefix_announcements": 19646,
+      "parse_errors": 5,
+      "excluded_paths": 6
+    },
+    "0005": {
+      "selected_prefix_announcements": 16205,
+      "excluded_paths": 7,
+      "parse_errors": 4
+    },
+    "0015": {
+      "selected_prefix_announcements": 15467,
+      "excluded_paths": 6,
+      "parse_errors": 5
+    },
+    "0020": {
+      "selected_prefix_announcements": 14698,
+      "excluded_paths": 7,
+      "parse_errors": 5
+    },
+    "0025": {
+      "selected_prefix_announcements": 13204,
+      "excluded_paths": 8,
+      "parse_errors": 4
+    }
+  },
+  "fixed_rules": "results/reconstitution_v2_0015/rules.json",
+  "train_slots": [
+    "0000",
+    "0005"
+  ],
+  "test_slots": [
+    "0015",
+    "0020",
+    "0025"
+  ],
+  "duration_seconds": 200.15,
+  "note": "Post-hoc confidence threshold is an experimental deviation from paper, not author algorithm. Existing fixed VP selection uses only 0000. Confidence is highest group weight divided by total group weights containing a signature; correlated windows are not independent. 0025 was not used to select thresholds during this run."
+}

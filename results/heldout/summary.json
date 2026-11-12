@@ -1,0 +1,84 @@
+{
+  "experiment": "held-out evaluation of simplified filtering policy + graph-feature proxy anchors",
+  "train_event_end_utc": 1693527233,
+  "test_first_selected_record_utc": 1693527300,
+  "test_last_selected_record_utc": 1693527599,
+  "test_file": "data/rrc00/updates.20230901.0015.gz",
+  "test_parse_counts": {
+    "prefix_announcements": 128958,
+    "excluded_paths": 19,
+    "parse_errors": 5
+  },
+  "candidate_prefixes": 20,
+  "observed_prefixes": 17,
+  "anchor_count": 50,
+  "drop_rules": 899,
+  "full": {
+    "records": 15467,
+    "links": 652,
+    "link_recall": 1.0,
+    "prefixes": 17,
+    "prefix_path_pairs": 2956,
+    "prefix_origin_pairs": 17,
+    "vps": 53
+  },
+  "policy": {
+    "records": 14554,
+    "links": 651,
+    "link_recall": 0.9984662576687117,
+    "prefixes": 17,
+    "prefix_path_pairs": 2955,
+    "prefix_origin_pairs": 17,
+    "vps": 49
+  },
+  "ablations": {
+    "update_only": {
+      "records": 609,
+      "links": 100,
+      "link_recall": 0.15337423312883436,
+      "prefixes": 17,
+      "prefix_path_pairs": 99,
+      "prefix_origin_pairs": 17,
+      "vps": 5,
+      "retained_fraction": 0.03937415141915045,
+      "anchor_count": 0,
+      "random_same_count_mean_link_recall": 0.5408128834355829
+    },
+    "previous_proxy_anchors": {
+      "records": 9134,
+      "links": 535,
+      "link_recall": 0.8205521472392638,
+      "prefixes": 17,
+      "prefix_path_pairs": 1929,
+      "prefix_origin_pairs": 17,
+      "vps": 36,
+      "retained_fraction": 0.5905476175082434,
+      "anchor_count": 35,
+      "random_same_count_mean_link_recall": 0.9568711656441719
+    },
+    "graph_proxy_anchors": {
+      "records": 14554,
+      "links": 651,
+      "link_recall": 0.9984662576687117,
+      "prefixes": 17,
+      "prefix_path_pairs": 2955,
+      "prefix_origin_pairs": 17,
+      "vps": 49,
+      "retained_fraction": 0.940971099760781,
+      "anchor_count": 50,
+      "random_same_count_mean_link_recall": 0.9959509202453988
+    }
+  },
+  "retained_fraction": 0.940971099760781,
+  "random_same_record_budget": {
+    "repeats": 100,
+    "seed": 42,
+    "mean_link_recall": 0.9959509202453988,
+    "min_link_recall": 0.9892638036809815,
+    "max_link_recall": 1.0,
+    "mean_prefixes": 17.0,
+    "mean_prefix_path_pairs": 2907.31
+  },
+  "elapsed_seconds": 37.25,
+  "scope_and_limitations": "20 train-selected IPv4 prefixes; prefix-expanded IPv4 announcements with AS_SEQUENCE only, not all BGP UPDATEs. Random draws exactly same number of records but allows arbitrary message splitting and is not deployable VP-prefix filters. Link denominator is the same scoped held-out file, not global ground truth. Anchors are proxy features on truncated graphs; the original update component and anchors are approximate. No RIB or withdrawals in scoring, no MOAS/hijack inference."
+}
